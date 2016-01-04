@@ -1,0 +1,242 @@
+
+
+/* Header
+--------------------------------------------- */
+
+
+#topbar {
+	height: 35px;
+	background: @purple;
+	
+	.pull-left {
+		line-height: 35px;
+		color: #fff;
+			#nav {
+		float: right;
+		margin-top: 45px;
+		
+			@media (max-width: 992px) {
+				float: none;
+				width: 100%;
+				text-align: center;
+				margin: 20px 0 10px;
+			}
+		
+		.list-unstyled();
+		
+		li {
+			font: 18px Georgia,serif;
+			display: inline-block;
+			padding: 0 0 0 25px;
+			
+			&:first-of-type {
+				padding: 0;
+			}
+
+			a {
+				color: #707070;
+			}
+			
+			&.current-menu-item a, &.current-menu-parent a {
+				color: #00cccc!important;
+			}
+			
+			@media (max-width: 1050px) {
+				font-size: 14px;
+			}
+			
+			@media (max-width: 992px) {
+				font-size: 18px;
+			}
+			
+			@media (max-width: 767px) {
+				display: block;
+				width: 100%;
+				padding: 0;
+				text-align: center;
+				margin-bottom: 1px;
+
+				a {
+					background: @purple;
+					color: #fff;
+					display: block;
+					padding: 10px 0;
+				}
+			}
+		}
+	}
+	}
+
+	.pull-right {
+		a {
+			font: 15px Arial,san-serif;
+			color: #fff;
+			border-right: 1px solid #7e456c;
+			border-left: 1px solid #7e456c;
+			display: block;
+			float: left;
+			height: 35px;
+			line-height: 35px;
+			padding: 0 10px;
+			margin: 0 0 0 -1px;
+			position: relative;
+			
+			i {
+				padding-left: 5px;
+				padding-right: 8px;
+			}
+			
+			&:hover {
+				color: @aqua;
+				text-decoration: none;
+			}
+		}
+		
+		
+		form {
+			display: block;
+			float: left;
+			width: 235px;
+			margin: 5px 0 0 10px;
+			position: relative;
+			
+				@media (max-width: 450px) {
+					display: none!important;
+				}
+			
+			i {
+				position: absolute;
+				left: 5px;
+				top: 5px;
+			}
+
+			input {
+				border: 0;
+				color: @purple;
+				font-size: 12px;
+				height: 25px;
+				padding-top: 2px;
+				width: 100%;
+				padding-left: 25px;
+
+				.border-radius(25px);
+			}
+		}
+		
+		@media (max-width: 1050px) {
+			float: none;
+			width: 100%;
+			text-align: center;
+			
+			a, form {
+				display: inline-block;
+				float: none;
+				border: 0;
+			}
+			
+			a {
+				position: relative;
+				top: 2px;
+			}
+		}
+	}
+	
+	@media (max-width: 1050px) {
+		height: 39px;
+	}
+	
+	.bubble {
+		font-size: 10px;
+		font-weight: 900;
+		line-height: 15px;
+		background: @pink;
+		position: absolute;
+		text-align: center;
+		top: 5px;
+		right: 5px;
+		
+		.border-radius(100%);
+		.square(15px);
+	}
+}
+
+
+
+#header {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	
+		@media (max-width: 1050px) {
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+	
+	#logo {
+		float: left;
+		margin-left: -40px;
+		width: 400px;
+		
+			@media (max-width: 992px) {
+				float: none;
+				margin: 0;
+				width: 100%;
+				text-align: center;
+				display: block;
+			}
+	}
+	
+	#nav {
+		float: right;
+		margin-top: 45px;
+		
+			@media (max-width: 992px) {
+				float: none;
+				width: 100%;
+				text-align: center;
+				margin: 20px 0 10px;
+			}
+		
+		.list-unstyled();
+		
+		li {
+			font: 18px Georgia,serif;
+			display: inline-block;
+			padding: 0 0 0 25px;
+			
+			&:first-of-type {
+				padding: 0;
+			}
+
+			a {
+				color: #707070;
+			}
+			
+			&.current-menu-item a, &.current-menu-parent a {
+				color: #00cccc!important;
+			}
+			
+			@media (max-width: 1050px) {
+				font-size: 14px;
+			}
+			
+			@media (max-width: 992px) {
+				font-size: 18px;
+			}
+			
+			@media (max-width: 767px) {
+				display: block;
+				width: 100%;
+				padding: 0;
+				text-align: center;
+				margin-bottom: 1px;
+
+				a {
+					background: @purple;
+					color: #fff;
+					display: block;
+					padding: 10px 0;
+				}
+			}
+		}
+	}
+}

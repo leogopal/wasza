@@ -1,0 +1,97 @@
+
+body { font-family: 'Roboto', Helvetica, Arial, sans-serif; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 { font-family: 'Droid Serif', Arial, serif; font-weight: 300; }
+
+
+.container.header {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.navbar-default {
+	background-color: #7F3D87;
+}
+.navbar-default .navbar-nav > li > a {
+	color: white;
+}
+
+.navbar-default .navbar-nav .menu-item a:hover {
+	background-color: #650066;
+	color: white;
+}
+.navbar-default .navbar-nav > .current-menu-item > a {
+	background-color: #650066;
+}
+
+#footer {
+	background: #2a2d34;
+	color: #fff;
+	padding: 50px;
+}
+
+
+/*
+Sidebar
+*/
+
+#sidebar .widget h3.widget-title {
+	text-align: center;
+	background-color: #5b435c;
+	font-weight: 300;
+	font-size: 18px;
+	padding: 10px;
+	color: white;
+}
+
+.woocommerce ul.product_list_widget {
+	padding: 0 10px;
+}
+
+.woocommerce ul.product_list_widget li {
+	padding: 8px 0;
+	border-bottom: 1px solid #2a2d34; 
+}
+
+.woocommerce ul.product_list_widget li:last-child {
+	border-bottom: none;
+}
+
+.woocommerce ul.product_list_widget li a {
+	line-height: 2.4em;
+}
+
+.woocommerce ul.product_list_widget li img {
+	width: 50px;
+}
+
+.woocommerce ul.product_list_widget li span.amount {
+	font-size: 12px;
+	font-style: italic;
+}
+
+/* Reeva Code */
+
+.paletteheader , .palettecolors {
+	padding-left: 0px !important;
+}
+
+.page-id-2268 h3 {
+	font-weight: bold;
+}
+
+.header-cart a {
+	border: none;
+	padding-left: 5px;
+}

@@ -1,0 +1,162 @@
+
+
+/* Footer
+--------------------------------------------- */
+
+
+#footer {
+	background: @purple;
+	color: #fff;
+	padding: 50px 0;
+	
+		@media (max-width: 992px) {
+			text-align: center;
+			
+			div, ul, p {
+				width: 100%!important;
+				text-align: center!important;
+				float: none!important;
+				
+				&.logos {
+					margin-top: 30px;
+					
+					img {
+						max-width: 50px!important;
+						height: auto!important;
+					}
+				}
+			}
+		}
+	
+	p, li, a, div {
+		font-size: 12px;
+		color: #fff;
+		line-height: 21px;
+	}
+	
+	p.pull-left span, .corplinks span {
+		color: @aqua;
+		padding: 0 7px;
+	}
+	
+	
+	ul {
+		text-align: right;
+		.list-unstyled();
+		
+		li {
+			display: inline;
+			padding: 0 0 0 7px;
+			
+			&::before {
+				content: '|';
+				display: inline-block;
+				padding-right: 7px;
+				color: @aqua;
+			}
+			
+			&:first-of-type {
+				&::before {
+					display: none;
+				}
+			}
+		}
+	}
+	
+	
+	
+	.socialicons {
+		padding: 10px 0 0;
+		
+		i {
+			font-size: 25px;
+			margin-right: 20px;
+		}
+	}
+	
+	
+	.corplinks {
+		p, a, li, div {
+			font-size: 11px;
+		}
+		
+		.pull-left {
+			padding-top: 15px;
+		}
+		
+		.logos {
+			img {
+				margin-left: 10px;
+			}
+		}
+	}
+}
+
+
+
+/* Modals
+--------------------------------------------- */
+
+
+#registermodal, #loginmodal {
+	max-width: 400px;
+	margin: auto;
+	padding-top: 178px;
+
+	.modal-header {
+		border: 0;
+		background: #54073b;
+		font-size: 30px;
+		margin: 0;
+		line-height: 30px;
+		font-family: 'Playfair Display',Georgia;
+		text-transform: uppercase;
+		color: #fff;
+		font-weight: 700;
+		letter-spacing: 1px;
+		padding: 35px;
+		position: relative;
+	}
+
+	.modal-content {
+		padding: 20px 35px;
+
+		.border-radius(0);
+	}
+	
+	.modal-close {
+		background: #000;
+		color: #fff;
+		text-align: center;
+		line-height: 25px;
+		font-size: 20px;
+		position: absolute;
+		top: 0;
+		right: 0;
+
+		.square(25px);
+	}
+	
+	/* user pro */
+	
+		/*
+.userpro-head {
+			display: none;
+		}
+*/
+		
+		.userpro-button {
+			background: #000!important;
+			color: #fff!important;
+			width: auto!important;
+			float: left;
+	
+			.border-radius(0)!important;
+			.btn();
+			.btn-primary();
+			
+			&.secondary {
+				color: #aaa!important;
+			}
+		}
+}

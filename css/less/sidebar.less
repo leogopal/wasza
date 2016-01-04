@@ -1,0 +1,155 @@
+
+
+/* Sidebar
+--------------------------------------------- */
+
+
+#sidebar {
+	font: 13px Arial;
+	color: #707070;
+	font-weight: 100;
+	width: 23%;
+	float: left;
+
+	a {
+		color: #707070;
+	}
+	
+	
+		@media (max-width: 767px) {
+			width: 100%;
+			border-top: 1px solid rgba(0,0,0,.2);
+			padding-top: 30px;
+			
+			.product-categories {
+				li {
+					display: block;
+					float: left;
+					width: 100%/3;
+					line-height: 15px;
+					
+					&:nth-of-type(3n-1) {
+						padding: 0 4px;
+					}
+					
+					a {
+						background: rgba(28, 142, 152, .2);
+						display: block;
+						float: left;
+						width: 100%;
+						padding: 10px 15px;
+						line-height: 15px;
+						margin: 2px 3px;
+
+						.transition();
+						
+						&:hover, &:active {
+							background: rgba(28, 142, 152, 1);
+							color: #fff;
+							text-decoration: none;
+						}
+					}
+				}
+			}
+		}
+		
+		@media (max-width: 650px) {
+			.product-categories {
+				li {
+					width: 50%;
+					padding: 0 4px 0 0!important;
+					
+					&:nth-of-type(2n) {
+						padding: 0 0!important;
+					}
+				}
+			}
+		}
+
+		@media (max-width: 450px) {
+			.product-categories {
+				li {
+					width: 100%;
+					padding: 0 0!important;
+				}
+			}
+		}
+
+
+	.widget {
+		padding-bottom: 20px;
+		border-bottom: 1px solid rgba(0,0,0,.2);
+		padding-right: 40px;
+		margin-bottom: 30px;
+		
+		.clearfix();
+		
+		@media (max-width: 767px) {
+			padding-right: 0;
+		}
+
+		h4 {
+			font: 16px Georgia;
+			font-weight: bold;
+			color: #000;
+			margin: 0 0 20px;
+		}
+
+		ul {
+			.list-unstyled();
+			
+			li {
+				line-height: 22px;
+			}
+		}
+	}
+}
+
+
+/* News
+--------------------------------------------- */
+
+
+.wallart_news_widget {
+	li {
+		line-height: 16px!important;
+		margin-bottom: 20px;
+
+		strong {
+			font-weight: 900;
+		}
+		
+		a {
+			color: #000!important;
+		}
+		
+		p {
+			font-size: 12px!important;
+		}
+	}
+}
+
+
+/* Sonnect
+--------------------------------------------- */
+
+
+.connectwithus_widget {
+	a {
+		background: #9d9d9d;
+		text-align: center;
+		line-height: 30px;
+		color: #fff!important;
+		font-size: 16px;
+		margin-right: 5px;
+		display: inline-block;
+
+		.border-radius(100%);
+		.transition();
+		.square(30px);
+		
+		&:hover {
+			background: #00cccc;
+		}
+	}
+}

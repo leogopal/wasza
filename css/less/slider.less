@@ -1,0 +1,101 @@
+
+
+/* Slider
+--------------------------------------------- */
+
+
+#slider {
+	padding-bottom: 50px;
+	
+	@media (max-width: 650px) {
+		display: none;
+	}
+	
+	#theslider {
+		position: relative;
+		max-width: 900px;
+	
+		.slider-controls {
+			position: absolute;
+			z-index: 500;
+			width: 100%;
+			
+			a {
+				position: absolute;
+				top: 175px;
+				left: 5px;
+				margin-top: -20px;
+				display: block;
+				background: rgba(0,0,0,.8);
+				text-align: center;
+				line-height: 40px;
+				
+				.square(40px);
+				.transition();
+				
+				img {
+					width: 50%;
+					height: auto;
+				}
+				
+				&:hover {
+					background: rgba(0,0,0,1);
+				}
+				
+				&:last-of-type {
+					left: auto;
+					right: 5px;
+					
+					.rotate(180deg);
+					
+					img {
+						position: relative;
+						bottom: 2px;
+					}
+				}
+			}
+		}
+		
+		
+		.item {
+			opacity: 0;
+			-webkit-transition-property: opacity;
+			-moz-transition-property: opacity;
+			transition-property: opacity;
+			
+			a {
+				display: block;
+			}
+			
+			img {
+				border:5px solid #d7d7d7;
+				.border-radius(7px);
+			}
+		}
+		
+		.active {
+			opacity: 1;
+		}
+		
+		.active.left,
+		.active.right {
+			left: 0;
+			opacity: 0;
+			z-index: 1;
+		}
+		
+		.next.left,
+		.prev.right {
+			opacity: 1;
+		}		
+	}
+	
+	
+	&::after {
+		content: ' ';
+		height: 30px;
+		width: 100%;
+		background: url('../images/shadow.png') center top no-repeat;
+		background-size: 900px 100%;
+	}
+}
